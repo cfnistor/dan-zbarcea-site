@@ -1,0 +1,141 @@
+---
+import artworks from "../data/artworks.json";
+
+const { lang = "fr", category = "graphic-art" } = Astro.props as {
+    lang: "fr" | "en";
+    category: string;
+};
+
+const filteredArtworks = artworks.filter((artwork) => artwork.category === category);
+
+const labels = {
+    fr: {
+        all: "Tous",
+        series: "Série",
+        technique: "Technique",
+        year: "Année",
+        format: "Format",
+        palette: "Couleur",
+    },
+    en: {
+        all: "All",
+        series: "Series",
+        technique: "Technique",
+        year: "Year",
+        format: "Format",
+        palette: "Color",
+    },
+};
+---
+
+<section class="artwork-gallery">
+    <div class="filters">
+        <select data-filter="series">
+            <option value="">{labels[lang].series}: {labels[lang].all}</option>
+            <option value="abstract">Abstract</option>
+            <option value="urban">Urban</option>
+            <option value="minimal">Minimal</option>
+        </select>
+
+        <select data-filter="year">
+            <option value="">{labels[lang].year}: {labels[lang].all}</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+        </select>
+
+        <select data-filter="format">
+            <option value="">{labels[lang].format}: {labels[lang].all}</option>
+            <option value="portrait">Portrait</option>
+            <option value="landscape">Landscape</option>
+            <option value="square">Square</option>
+        </select>
+
+        <select data-filter="technique">
+            <option value="">{labels[lang].technique}: {labels[lang].all}</option>
+            <option value="mixed-media">{lang === "fr" ? "Technique mixte" : "Mixed Media"}</option>
+            <option value="digital-illustration">{lang === "fr" ? "Illustration numérique" : "Digital Illustration"}</option>
+            <option value="ink">{lang === "fr" ? "Encre" : "Ink"}</option>
+            <option value="collage">Collage</option>
+        </select>
+
+        <select data-filter="palette">
+            <option value="">{labels[lang].palette}: {labels[lang].all}</option>
+            <option value="blue">{lang === "fr" ? "Bleu" : "Blue"}</option>
+            <option value="black">{lang === "fr" ? "Noir" : "Black"}</option>
+            <option value="warm">{lang === "fr" ? "Chaud" : "Warm"}</option>
+            <option value="monochrome">Monochrome</option>
+            <option value="white">{lang === "fr" ? "Blanc" : "White"}</option>
+        </select>
+
+        <button type="button" class="reset-filters">
+            {lang === "fr" ? "Réinitialiser" : "Reset"}
+        </button>
+    </div>
+
+    <div class="gallery">
+        {filteredArtworks.map((artwork) => (
+                <article
+                        class="card"
+                        data-series={artwork.series}
+                        data-technique={artwork.techniqueKey}
+                        data-year={artwork.year}
+                        data-format={artwork.format}
+                        data-palette={artwork.palette}
+                >
+                    <img src={artwork.image} alt={artwork.title[lang]} />
+
+                    <div class="card-content">
+                        <h3>{artwork.title[lang]}</h3>
+
+                        <div class="artwork-meta">
+                            <span>{artwork.technique[lang]}</span>
+                            <span>{artwork.series}</span>
+                            <span>{artwork.format}</span>
+                            <span>{artwork.palette}</span>
+                            <span>{artwork.year}</span>
+                        </div>
+                    </div>
+                </article>
+        ))}
+    </div>
+</section>
+
+<script>
+    const filters = document.querySelectorAll("[data-filter]");
+    const cards = document.querySelectorAll(".card");
+
+    function applyFilters() {
+        const activeFilters: Record<string, string> = {};
+        const resetButton = document.querySelector(".reset-filters");
+
+        resetButton?.addEventListener("click", () => {
+            filters.forEach((filter) => {
+                filter.value = "";
+            });
+
+            applyFilters();
+        });
+
+        filters.forEach((filter) => {
+            const key = filter.dataset.filter;
+            const value = filter.value;
+
+            if (value) {
+                activeFilters[key] = value;
+            }
+        });
+
+        cards.forEach((card) => {
+            const isVisible = Object.entries(activeFilters).every(([key, value]) => {
+                return card.dataset[key] === value;
+            });
+
+            card.style.display = isVisible ? "block" : "none";
+        });
+    }
+
+    filters.forEach((filter) => {
+        filter.addEventListener("change", applyFilters);
+    });
+</script>

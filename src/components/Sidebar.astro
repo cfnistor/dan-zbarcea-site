@@ -1,0 +1,65 @@
+---
+const { lang = "fr", page = "home" } = Astro.props as {
+    lang: "fr" | "en";
+    page:
+        | "home"
+        | "graphic-art"
+        | "painting"
+        | "photography"
+        | "process"
+        | "biography"
+        | "contact";
+};
+
+const menu = {
+    fr: [
+        { label: "Accueil", href: "/fr/" },
+        { label: "Art graphique", href: "/fr/art-graphique" },
+        { label: "Peinture", href: "/fr/peinture" },
+        { label: "Photographie", href: "/fr/photographie" },
+        { label: "Processus de création", href: "/fr/processus" },
+        { label: "Biographie", href: "/fr/biographie" },
+        { label: "Contact", href: "/fr/contact" },
+    ],
+    en: [
+        { label: "Home", href: "/en/" },
+        { label: "Graphic Art", href: "/en/graphic-art" },
+        { label: "Painting", href: "/en/painting" },
+        { label: "Photography", href: "/en/photography" },
+        { label: "Creative Process", href: "/en/process" },
+        { label: "Biography", href: "/en/biography" },
+        { label: "Contact", href: "/en/contact" },
+    ],
+};
+
+const languageSwitch = {
+    home: { fr: "/fr/", en: "/en/" },
+    "graphic-art": { fr: "/fr/art-graphique", en: "/en/graphic-art" },
+    painting: { fr: "/fr/peinture", en: "/en/painting" },
+    photography: { fr: "/fr/photographie", en: "/en/photography" },
+    process: { fr: "/fr/processus", en: "/en/process" },
+    biography: { fr: "/fr/biographie", en: "/en/biography" },
+    contact: { fr: "/fr/contact", en: "/en/contact" },
+};
+---
+
+<aside class="sidebar">
+    <h1>Dan<br />Zbarcea</h1>
+
+    <nav>
+        {menu[lang].map((item) => (
+                <a href={item.href}>{item.label}</a>
+        ))}
+    </nav>
+
+    <div class="language-switcher">
+        <a href={languageSwitch[page].fr}>FR</a>
+        <span>|</span>
+        <a href={languageSwitch[page].en}>EN</a>
+    </div>
+
+    <div class="infos">
+        {lang === "fr" ? "Artiste visuel" : "Visual artist"}<br />
+        Montréal, Québec
+    </div>
+</aside>

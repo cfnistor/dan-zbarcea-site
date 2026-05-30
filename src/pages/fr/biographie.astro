@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Biographie | Dan Zbarcea" lang="fr-CA">
+
+    <div class="page">
+
+        <Sidebar lang="fr" page="biography" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Biographie"
+                    text="Dan Zbarcea est un artiste visuel basé à Montréal, dont le travail explore la relation entre mémoire, lumière et émotion. À travers la peinture, l’art graphique et la photographie, il développe une approche personnelle inspirée par les formes, les textures et les atmosphères du quotidien."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

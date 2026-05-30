@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Processus de création | Dan Zbarcea" lang="fr-CA">
+
+    <div class="page">
+
+        <Sidebar lang="fr" page="process" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Processus de création"
+                    text="Cette section offre un aperçu du processus de création derrière les œuvres. On y retrouve des esquisses, des expérimentations, des détails d’atelier et différentes étapes de développement artistique."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

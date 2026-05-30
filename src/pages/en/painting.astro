@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Painting | Dan Zbarcea" lang="en-CA">
+
+    <div class="page">
+
+        <Sidebar lang="en" page="painting" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Painting"
+                    text="This section will present a selection of paintings exploring light, memory and emotion through different techniques and inspirations."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

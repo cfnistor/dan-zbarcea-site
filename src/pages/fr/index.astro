@@ -1,0 +1,21 @@
+---
+import artworks from "../../data/artworks.json";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+---
+
+<BaseLayout title="Dan Zbarcea" lang="fr-CA">
+    <div class="page">
+        <Sidebar lang="fr" page="home" />
+
+        <main class="content">
+            <div class="gallery">
+                {artworks.map((artwork) => (
+                        <div class="card">
+                            <img src={artwork.image} alt={artwork.title.fr} />
+                        </div>
+                ))}
+            </div>
+        </main>
+    </div>
+</BaseLayout>

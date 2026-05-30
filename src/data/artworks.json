@@ -1,0 +1,157 @@
+[
+  {
+    "id": "ga-001",
+    "title": { "fr": "Fragments bleus", "en": "Blue Fragments" },
+    "category": "graphic-art",
+    "series": "abstract",
+    "technique": { "fr": "Technique mixte", "en": "Mixed Media" },
+    "techniqueKey": "mixed-media",
+    "year": 2026,
+    "format": "portrait",
+    "palette": "blue",
+    "image": "https://picsum.photos/500/700?ga1"
+  },
+
+  {
+    "id": "ga-002",
+    "title": { "fr": "Structure urbaine", "en": "Urban Structure" },
+    "category": "graphic-art",
+    "series": "urban",
+    "technique": { "fr": "Illustration numérique", "en": "Digital Illustration" },
+    "techniqueKey": "digital-illustration",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/450?ga2"
+  },
+
+  {
+    "id": "ga-003",
+    "title": { "fr": "Équilibre", "en": "Balance" },
+    "category": "graphic-art",
+    "series": "minimal",
+    "technique": { "fr": "Encre", "en": "Ink" },
+    "techniqueKey": "ink",
+    "year": 2024,
+    "format": "square",
+    "palette": "black",
+    "image": "https://picsum.photos/600/600?ga3"
+  },
+
+  {
+    "id": "ga-004",
+    "title": { "fr": "Lignes silencieuses", "en": "Silent Lines" },
+    "category": "graphic-art",
+    "series": "minimal",
+    "technique": { "fr": "Illustration numérique", "en": "Digital Illustration" },
+    "techniqueKey": "digital-illustration",
+    "year": 2026,
+    "format": "landscape",
+    "palette": "white",
+    "image": "https://picsum.photos/700/500?ga4"
+  },
+
+  {
+    "id": "ga-005",
+    "title": { "fr": "Mémoire urbaine", "en": "Urban Memory" },
+    "category": "graphic-art",
+    "series": "urban",
+    "technique": { "fr": "Technique mixte", "en": "Mixed Media" },
+    "techniqueKey": "mixed-media",
+    "year": 2025,
+    "format": "portrait",
+    "palette": "warm",
+    "image": "https://picsum.photos/500/750?ga5"
+  },
+
+  {
+    "id": "ga-006",
+    "title": { "fr": "Contraste", "en": "Contrast" },
+    "category": "graphic-art",
+    "series": "abstract",
+    "technique": { "fr": "Encre", "en": "Ink" },
+    "techniqueKey": "ink",
+    "year": 2024,
+    "format": "square",
+    "palette": "black",
+    "image": "https://picsum.photos/650/650?ga6"
+  },
+
+  {
+    "id": "ga-007",
+    "title": { "fr": "Perspective", "en": "Perspective" },
+    "category": "graphic-art",
+    "series": "urban",
+    "technique": { "fr": "Collage", "en": "Collage" },
+    "techniqueKey": "collage",
+    "year": 2026,
+    "format": "portrait",
+    "palette": "blue",
+    "image": "https://picsum.photos/550/720?ga7"
+  },
+
+  {
+    "id": "ga-008",
+    "title": { "fr": "Textures flottantes", "en": "Floating Textures" },
+    "category": "graphic-art",
+    "series": "abstract",
+    "technique": { "fr": "Technique mixte", "en": "Mixed Media" },
+    "techniqueKey": "mixed-media",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "warm",
+    "image": "https://picsum.photos/700/480?ga8"
+  },
+
+  {
+    "id": "ga-009",
+    "title": { "fr": "Résonance", "en": "Resonance" },
+    "category": "graphic-art",
+    "series": "minimal",
+    "technique": { "fr": "Encre", "en": "Ink" },
+    "techniqueKey": "ink",
+    "year": 2024,
+    "format": "portrait",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/520/760?ga9"
+  },
+
+  {
+    "id": "ga-010",
+    "title": { "fr": "Mouvement", "en": "Movement" },
+    "category": "graphic-art",
+    "series": "abstract",
+    "technique": { "fr": "Illustration numérique", "en": "Digital Illustration" },
+    "techniqueKey": "digital-illustration",
+    "year": 2026,
+    "format": "square",
+    "palette": "blue",
+    "image": "https://picsum.photos/620/620?ga10"
+  },
+
+  {
+    "id": "ga-011",
+    "title": { "fr": "Fragments urbains", "en": "Urban Fragments" },
+    "category": "graphic-art",
+    "series": "urban",
+    "technique": { "fr": "Collage", "en": "Collage" },
+    "techniqueKey": "collage",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "warm",
+    "image": "https://picsum.photos/760/520?ga11"
+  },
+
+  {
+    "id": "ga-012",
+    "title": { "fr": "Silence géométrique", "en": "Geometric Silence" },
+    "category": "graphic-art",
+    "series": "minimal",
+    "technique": { "fr": "Technique mixte", "en": "Mixed Media" },
+    "techniqueKey": "mixed-media",
+    "year": 2024,
+    "format": "portrait",
+    "palette": "white",
+    "image": "https://picsum.photos/530/780?ga12"
+  }
+]

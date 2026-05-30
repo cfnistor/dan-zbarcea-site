@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Photographie | Dan Zbarcea" lang="fr-CA">
+
+    <div class="page">
+
+        <Sidebar lang="fr" page="photography" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Photographie"
+                    text="Cette section présente une sélection de photographies capturant des instants, des atmosphères et des détails du quotidien. Les images explorent la lumière, les contrastes et les émotions à travers différents regards et environnements."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

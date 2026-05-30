@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Biography | Dan Zbarcea" lang="en-CA">
+
+    <div class="page">
+
+        <Sidebar lang="en" page="biography" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Biography"
+                    text="Dan Zbarcea is a visual artist based in Montreal whose work explores the relationship between memory, light and emotion. Through painting, graphic art and photography, he develops a personal approach inspired by forms, textures and everyday atmospheres."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

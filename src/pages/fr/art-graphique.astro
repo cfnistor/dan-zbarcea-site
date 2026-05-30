@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+import ArtworkGallery from "../../components/ArtworkGallery.astro";
+---
+
+<BaseLayout title="Art graphique | Dan Zbarcea" lang="fr-CA">
+
+    <div class="page">
+
+        <Sidebar lang="fr" page="graphic-art" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Art graphique"
+                    text="Cette section rassemble des œuvres graphiques explorant la forme, la texture et la composition à travers différentes approches visuelles. Les créations présentées naviguent entre abstraction, illustration et expérimentation graphique."
+            />
+
+            <ArtworkGallery lang="fr" category="graphic-art" />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

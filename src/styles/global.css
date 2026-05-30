@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f4f4f2;
+    color: #222;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+.language-switcher {
+    margin-top: 32px;
+    margin-bottom: 80px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+}
+
+.language-switcher a {
+    color: #777;
+    text-decoration: none;
+}
+
+.language-switcher a:hover {
+    color: #0a5d63;
+}
+
+.language-switcher span {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+.sidebar {
+    padding: 60px 40px;
+}
+
+.sidebar h1 {
+    font-size: 56px;
+    line-height: 0.92;
+    margin: 0 0 50px;
+    color: #0a5d63;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.sidebar nav {
+    margin-bottom: 60px;
+}
+
+.sidebar nav a {
+    display: block;
+    margin: 16px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav a:hover {
+    color: #0a5d63;
+}
+
+.infos {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.content {
+    padding: 40px;
+}
+
+.gallery {
+    columns: 4 220px;
+    column-gap: 24px;
+}
+
+.card {
+    break-inside: avoid;
+    margin-bottom: 24px;
+    background: white;
+    overflow: hidden;
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.page-content {
+    max-width: 900px;
+}
+
+.page-content h2 {
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #0a5d63;
+}
+
+.page-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+@media (max-width: 900px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding-bottom: 20px;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+
+    .gallery {
+        columns: 2 160px;
+    }
+}
+
+/* gallery */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.filters select {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px;
+}
+
+.card-content {
+    padding: 18px 18px 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 12px;
+    font-size: 19px;
+    line-height: 1.25;
+    color: #222;
+}
+
+.artwork-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.artwork-meta span {
+    font-size: 12px;
+    line-height: 1;
+    color: #666;
+    background: #f1f1ef;
+    padding: 6px 8px;
+    border-radius: 999px;
+}
+
+.reset-filters {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reset-filters:hover {
+    border-color: #0a5d63;
+    color: #0a5d63;
+}

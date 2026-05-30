@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Contact | Dan Zbarcea" lang="en-CA">
+
+    <div class="page">
+
+        <Sidebar lang="en" page="contact" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Contact"
+                    text="For information, collaborations, exhibitions or artwork inquiries, please get in touch by email. Messages will be answered as soon as possible."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>

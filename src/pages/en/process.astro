@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
+---
+
+<BaseLayout title="Creative Process | Dan Zbarcea" lang="en-CA">
+
+    <div class="page">
+
+        <Sidebar lang="en" page="process" />
+
+        <main class="content">
+
+            <PageContent
+                    title="Creative Process"
+                    text="This section offers a glimpse into the creative process behind the artworks. It includes sketches, experiments, studio details and different stages of artistic development."
+            />
+
+        </main>
+
+    </div>
+
+</BaseLayout>
