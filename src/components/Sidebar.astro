@@ -13,25 +13,24 @@ const { lang = "fr", page = "home" } = Astro.props as {
 
 const menu = {
     fr: [
-        { label: "Accueil", href: "/fr/" },
-        { label: "Art graphique", href: "/fr/art-graphique" },
-        { label: "Peinture", href: "/fr/peinture" },
-        { label: "Photographie", href: "/fr/photographie" },
-        { label: "Processus de création", href: "/fr/processus" },
-        { label: "Biographie", href: "/fr/biographie" },
-        { label: "Contact", href: "/fr/contact" },
+        { label: "Accueil", href: "/fr/", page: "home" },
+        { label: "Art graphique", href: "/fr/art-graphique", page: "graphic-art" },
+        { label: "Peinture", href: "/fr/peinture", page: "painting" },
+        { label: "Photographie", href: "/fr/photographie", page: "photography" },
+        { label: "Processus de création", href: "/fr/processus", page: "process" },
+        { label: "Biographie", href: "/fr/biographie", page: "biography" },
+        { label: "Contact", href: "/fr/contact", page: "contact" },
     ],
     en: [
-        { label: "Home", href: "/en/" },
-        { label: "Graphic Art", href: "/en/graphic-art" },
-        { label: "Painting", href: "/en/painting" },
-        { label: "Photography", href: "/en/photography" },
-        { label: "Creative Process", href: "/en/process" },
-        { label: "Biography", href: "/en/biography" },
-        { label: "Contact", href: "/en/contact" },
+        { label: "Home", href: "/en/", page: "home" },
+        { label: "Graphic Art", href: "/en/graphic-art", page: "graphic-art" },
+        { label: "Painting", href: "/en/painting", page: "painting" },
+        { label: "Photography", href: "/en/photography", page: "photography" },
+        { label: "Creative Process", href: "/en/process", page: "process" },
+        { label: "Biography", href: "/en/biography", page: "biography" },
+        { label: "Contact", href: "/en/contact", page: "contact" },
     ],
 };
-
 const languageSwitch = {
     home: { fr: "/fr/", en: "/en/" },
     "graphic-art": { fr: "/fr/art-graphique", en: "/en/graphic-art" },
@@ -48,7 +47,9 @@ const languageSwitch = {
 
     <nav>
         {menu[lang].map((item) => (
-                <a href={item.href}>{item.label}</a>
+                <a href={item.href} class={page === item.page ? "active" : ""}>
+                    {item.label}
+                </a>
         ))}
     </nav>
 

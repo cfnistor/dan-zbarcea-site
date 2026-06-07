@@ -1,0 +1,104 @@
+  {
+    "id": "ga-001",
+    "title": { "fr": "post f dz (1)", "en": "post f dz (1)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/700?ga1"
+  },
+
+  {
+    "id": "ga-002",
+    "title": { "fr": "post f dz (2)", "en": "post f dz (2)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/450?ga2"
+  },
+
+  {
+    "id": "ga-003",
+    "title": { "fr": "post f dz (3)", "en": "post f dz (3)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/600?ga3"
+  },
+
+  {
+    "id": "ga-004",
+    "title": { "fr": "post f dz (4)", "en": "post f dz (4)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/500?ga4"
+  },
+
+  {
+    "id": "ga-005",
+    "title": { "fr": "post f dz (5)", "en": "post f dz (5)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/750?ga5"
+  },
+
+  {
+    "id": "ga-006",
+    "title": { "fr": "post f dz (6)", "en": "post f dz (6)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/650/650?ga6"
+  },
+
+  {
+    "id": "ga-007",
+    "title": { "fr": "post f dz (7)", "en": "post f dz (7)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/550/720?ga7"
+  },
+
+  {
+    "id": "ga-008",
+    "title": { "fr": "post f dz (8)", "en": "post f dz (8)" },
+    "category": "post-photography",
+    "series": "The scream",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/480?ga8"
+  },
+

@@ -2,11 +2,16 @@
 const {
     title,
     text,
+    subtitle,
 } = Astro.props;
 ---
 
 <section class="page-content">
     <h2>{title}</h2>
 
-    <p>{text}</p>
+    {subtitle && (
+            <p class="page-subtitle">{subtitle}</p>
+    )}
+
+    <div class="page-text" set:html={text} />
 </section>

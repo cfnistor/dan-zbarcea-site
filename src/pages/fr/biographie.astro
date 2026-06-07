@@ -2,6 +2,11 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
 import PageContent from "../../components/PageContent.astro";
+
+const biographySubtitle = {
+    fr: "Artiste visuel, chercheur et enseignant",
+    en: "Visual Artist, Researcher and Educator"
+};
 ---
 
 <BaseLayout title="Biographie | Dan Zbarcea" lang="fr-CA">
@@ -14,7 +19,30 @@ import PageContent from "../../components/PageContent.astro";
 
             <PageContent
                     title="Biographie"
-                    text="Dan Zbarcea est un artiste visuel basé à Montréal, dont le travail explore la relation entre mémoire, lumière et émotion. À travers la peinture, l’art graphique et la photographie, il développe une approche personnelle inspirée par les formes, les textures et les atmosphères du quotidien."
+                    subtitle={biographySubtitle['fr']}
+                    text={`
+                            <p>
+                            En tant qu'artiste, enseignante en arts visuels et chercheur, j'utilise le dessin, 
+                            la peinture, les médias contemporains imprimés et la photographie numérique pour construire une vision artistique multidisciplinaire 
+                            et multiculturelle, ainsi qu'une démarche et des perspectives pédagogiques. 
+                            J'explore en permanence les enjeux sociaux, culturels, technologiques, éthiques et écologiques qui constituent des défis intellectuels 
+                            pour la communauté de la conception pédagogique.
+                            </p>
+                            
+                            <p>
+                            Mes recherches actuelles portent sur la pratique des arts visuels et la communication à travers les médias artistiques classiques, 
+                            l'hypermédia, les interfaces de communication, l'éthique des médias, le langage rhétorique et violent de l'hypermédia, 
+                            les effets complexes du langage hypermédia sur le spectateur (en tant que participant indirect au processus de construction du savoir dans l'hypermédia), 
+                            et les stratégies pédagogiques de sensibilisation et de réflexion.
+                            </p>
+                            
+                            <p>
+                            Mon expérience professionnelle en droit, arts graphiques, conception événementielle 
+                            et enseignement artistique m’ont permis de collaborer avec des artistes, des journalistes, des écrivains et des éditeurs. 
+                            Au cours de ma carrière artistique et pédagogique, j'ai publié, présenté et exposé des travaux dans ces divers domaines 
+                            et je continue de développer une perspective multidisciplinaire dans mes pratiques interconnectées.
+                            </p>
+                    `}
             />
 
         </main>

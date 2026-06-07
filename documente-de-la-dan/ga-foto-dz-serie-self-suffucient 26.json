@@ -1,0 +1,170 @@
+  {
+    "id": "ph-001",
+    "title": { "fr": "self s dz (1)", "en": self s dz (1)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo },
+    "techniqueKey": "photo",
+    "year": 2012,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/700?ph1"
+  },
+
+  {
+    "id": "ph-002",
+    "title": { "fr": "self s dz (2)", "en": "self s dz (2)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2024,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/450?ph2"
+  },
+
+  {
+    "id": "ph-003",
+    "title": { "fr": "self s dz (3)", "en": "self s dz (3)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo }, },
+    "techniqueKey": "photo",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/600?ph3"
+  },
+
+  {
+    "id": "ph-004",
+    "title": { "fr": "self s dz (4)", "en": "self s dz (4)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/500?ph4"
+  },
+
+  {
+    "id": "ph-005",
+    "title": { "fr": "self s dz (5)", "en": "self s dz (5)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2015,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/750?ph5"
+  },
+
+  {
+    "id": "ph-006",
+    "title": { "fr": "self s dz (6)", "en": "self s dz (6)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2024,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/650/650?ph6"
+  },
+
+  {
+    "id": "ph-007",
+    "title": { "fr": "self s dz (7)", "en": "self s dz (7)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2021,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/550/720?ph7"
+  },
+
+  {
+    "id": "ph-008",
+    "title": { "fr": "self s dz (8)", "en": "self s dz (8)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2023,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/480?ph8"
+  },
+
+  {
+    "id": "ph-009",
+    "title": { "fr": "self s dz (9)", "en": "self s dz (9)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/520/760?ph9"
+  },
+
+  {
+    "id": "ph-010",
+    "title": { "fr": "self s dz (10)", "en": "self s dz (10)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2026,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/620/620?ph10"
+  },
+
+  {
+    "id": "ph-011",
+    "title": { "fr": "self s dz (11)", "en": "self s dz (11)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/760/520?ph11"
+  }
+
+  {
+    "id": "ph-012",
+    "title": { "fr": "self s dz (12)", "en": "self s dz (12)" },
+    "category": "photography",
+    "series": "self-sufficient",
+    "technique": { "fr": "photo numérique", "en": "digital photo" },
+    "techniqueKey": "photo",
+    "year": 2008,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/530/780?ph12"
+  }
+
+  {
+  "id": "ph-013",
+  "title": {
+  "fr": "self s dz (12)", "en": "self s dz (12)"},
+  "category": "photography",
+  "series": "self-sufficient",
+  "technique": {
+  "fr": "photo numérique", "en": "digital photo"},
+  "techniqueKey": "photo",
+  "year": 2008,
+  "format": "landscape",
+  "palette": "monochrome",
+  "image": "https://picsum.photos/530/780?ph12"
+  }

@@ -3,6 +3,65 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
 import PageContent from "../../components/PageContent.astro";
 import ArtworkGallery from "../../components/ArtworkGallery.astro";
+import graphicArtArtworks from "../../data/graphic-art.json";
+
+const graphicArtFilters = [
+    {
+        key: "series",
+        label: { fr: "Série", en: "Series" },
+        options: [
+            { value: "abstract", label: { fr: "Abstract", en: "Abstract" } },
+            { value: "urban", label: { fr: "Urban", en: "Urban" } },
+            { value: "minimal", label: { fr: "Minimal", en: "Minimal" } },
+        ],
+    },
+    {
+        key: "technique",
+        label: { fr: "Technique", en: "Technique" },
+        options: [
+            { value: "mixed-media", label: { fr: "Technique mixte", en: "Mixed Media" } },
+            { value: "digital-illustration", label: { fr: "Illustration numérique", en: "Digital Illustration" } },
+            { value: "ink", label: { fr: "Encre", en: "Ink" } },
+            { value: "collage", label: { fr: "Collage", en: "Collage" } },
+        ],
+    },
+    {
+        key: "year",
+        label: { fr: "Année", en: "Year" },
+        options: [
+            { value: "2026", label: { fr: "2026", en: "2026" } },
+            { value: "2025", label: { fr: "2025", en: "2025" } },
+            { value: "2024", label: { fr: "2024", en: "2024" } },
+        ],
+    },
+    {
+        key: "format",
+        label: { fr: "Format", en: "Format" },
+        options: [
+            { value: "portrait", label: { fr: "Portrait", en: "Portrait" } },
+            { value: "landscape", label: { fr: "Paysage", en: "Landscape" } },
+            { value: "square", label: { fr: "Carré", en: "Square" } },
+        ],
+    },
+    {
+        key: "location",
+        label: { fr: "Lieu", en: "Location" },
+        options: [
+            { value: "not-specified", label: { fr: "Non précisé", en: "Not specified" } },
+        ],
+    },
+    {
+        key: "palette",
+        label: { fr: "Couleur", en: "Color" },
+        options: [
+            { value: "blue", label: { fr: "Bleu", en: "Blue" } },
+            { value: "black", label: { fr: "Noir", en: "Black" } },
+            { value: "warm", label: { fr: "Chaud", en: "Warm" } },
+            { value: "monochrome", label: { fr: "Monochrome", en: "Monochrome" } },
+            { value: "white", label: { fr: "Blanc", en: "White" } },
+        ],
+    },
+];
 ---
 
 <BaseLayout title="Art graphique | Dan Zbarcea" lang="fr-CA">
@@ -18,7 +77,11 @@ import ArtworkGallery from "../../components/ArtworkGallery.astro";
                     text="Cette section rassemble des œuvres graphiques explorant la forme, la texture et la composition à travers différentes approches visuelles. Les créations présentées naviguent entre abstraction, illustration et expérimentation graphique."
             />
 
-            <ArtworkGallery lang="fr" category="graphic-art" />
+            <ArtworkGallery
+                    lang="fr"
+                    artworks={graphicArtArtworks}
+                    filters={graphicArtFilters}
+            />
 
         </main>
 

@@ -2,6 +2,55 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
 import PageContent from "../../components/PageContent.astro";
+import ArtworkGallery from "../../components/ArtworkGallery.astro";
+import photographyArtworks from "../../data/photography.json";
+
+const photographyFilters = [
+    {
+        key: "series",
+        label: { fr: "Série", en: "Series" },
+        options: [
+            { value: "self-sufficient", label: { fr: "Self-Sufficient", en: "Self-Sufficient" } },
+            { value: "post-photography", label: { fr: "Le Cri", en: "The Scream" } },
+        ],
+    },
+    {
+        key: "technique",
+        label: { fr: "Technique", en: "Technique" },
+        options: [
+            { value: "photo", label: { fr: "Photo numérique", en: "Digital Photo" } },
+        ],
+    },
+    {
+        key: "year",
+        label: { fr: "Année", en: "Year" },
+        options: [
+            { value: "2008", label: { fr: "2008", en: "2008" } },
+            { value: "2011", label: { fr: "2011", en: "2011" } },
+            { value: "2012", label: { fr: "2012", en: "2012" } },
+            { value: "2015", label: { fr: "2015", en: "2015" } },
+            { value: "2021", label: { fr: "2021", en: "2021" } },
+            { value: "2023", label: { fr: "2023", en: "2023" } },
+            { value: "2024", label: { fr: "2024", en: "2024" } },
+            { value: "2025", label: { fr: "2025", en: "2025" } },
+            { value: "2026", label: { fr: "2026", en: "2026" } },
+        ],
+    },
+    {
+        key: "format",
+        label: { fr: "Format", en: "Format" },
+        options: [
+            { value: "landscape", label: { fr: "Paysage", en: "Landscape" } },
+        ],
+    },
+    {
+        key: "palette",
+        label: { fr: "Couleur", en: "Color" },
+        options: [
+            { value: "monochrome", label: { fr: "Monochrome", en: "Monochrome" } },
+        ],
+    },
+];
 ---
 
 <BaseLayout title="Photography | Dan Zbarcea" lang="en-CA">
@@ -14,7 +63,13 @@ import PageContent from "../../components/PageContent.astro";
 
             <PageContent
                     title="Photography"
-                    text="This section presents a selection of photographs capturing moments, atmospheres and everyday details. The images explore light, contrast and emotion through different perspectives and environments."
+                    text="This section fsdaf presents a selection of photographs capturing moments, atmospheres and everyday details. The images explore light, contrast and emotion through different perspectives and environments."
+            />
+
+            <ArtworkGallery
+                    lang="en"
+                    artworks={photographyArtworks}
+                    filters={photographyFilters}
             />
 
         </main>

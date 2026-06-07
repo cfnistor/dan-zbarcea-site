@@ -1,134 +1,157 @@
 ---
-import artworks from "../data/artworks.json";
+type Lang = "fr" | "en";
 
-const { lang = "fr", category = "graphic-art" } = Astro.props as {
-    lang: "fr" | "en";
-    category: string;
+type FilterOption = {
+    label: {
+        fr: string;
+        en: string;
+    };
+    value: string;
 };
 
-const filteredArtworks = artworks.filter((artwork) => artwork.category === category);
+type FilterConfig = {
+    key: string;
+    label: {
+        fr: string;
+        en: string;
+    };
+    options: FilterOption[];
+};
+
+type Artwork = {
+    id: string;
+    title: {
+        fr: string;
+        en: string;
+    };
+    image: string;
+    meta: {
+        fr: string[];
+        en: string[];
+    };
+    filters: Record<string, string>;
+};
+
+const {
+    lang = "fr",
+    artworks = [],
+    filters = [],
+} = Astro.props as {
+    lang: Lang;
+    artworks: Artwork[];
+    filters: FilterConfig[];
+};
 
 const labels = {
     fr: {
         all: "Tous",
-        series: "Série",
-        technique: "Technique",
-        year: "Année",
-        format: "Format",
-        palette: "Couleur",
+        reset: "Réinitialiser",
     },
     en: {
         all: "All",
-        series: "Series",
-        technique: "Technique",
-        year: "Year",
-        format: "Format",
-        palette: "Color",
+        reset: "Reset",
     },
 };
 ---
 
 <section class="artwork-gallery">
     <div class="filters">
-        <select data-filter="series">
-            <option value="">{labels[lang].series}: {labels[lang].all}</option>
-            <option value="abstract">Abstract</option>
-            <option value="urban">Urban</option>
-            <option value="minimal">Minimal</option>
-        </select>
+        {
+            filters.map((filter) => (
+                    <select data-filter={filter.key}>
+                        <option value="">
+                            {filter.label[lang]}: {labels[lang].all}
+                        </option>
 
-        <select data-filter="year">
-            <option value="">{labels[lang].year}: {labels[lang].all}</option>
-            <option value="2026">2026</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-        </select>
-
-        <select data-filter="format">
-            <option value="">{labels[lang].format}: {labels[lang].all}</option>
-            <option value="portrait">Portrait</option>
-            <option value="landscape">Landscape</option>
-            <option value="square">Square</option>
-        </select>
-
-        <select data-filter="technique">
-            <option value="">{labels[lang].technique}: {labels[lang].all}</option>
-            <option value="mixed-media">{lang === "fr" ? "Technique mixte" : "Mixed Media"}</option>
-            <option value="digital-illustration">{lang === "fr" ? "Illustration numérique" : "Digital Illustration"}</option>
-            <option value="ink">{lang === "fr" ? "Encre" : "Ink"}</option>
-            <option value="collage">Collage</option>
-        </select>
-
-        <select data-filter="palette">
-            <option value="">{labels[lang].palette}: {labels[lang].all}</option>
-            <option value="blue">{lang === "fr" ? "Bleu" : "Blue"}</option>
-            <option value="black">{lang === "fr" ? "Noir" : "Black"}</option>
-            <option value="warm">{lang === "fr" ? "Chaud" : "Warm"}</option>
-            <option value="monochrome">Monochrome</option>
-            <option value="white">{lang === "fr" ? "Blanc" : "White"}</option>
-        </select>
+                        {filter.options.map((option) => (
+                                <option value={option.value}>
+                                    {option.label[lang]}
+                                </option>
+                        ))}
+                    </select>
+            ))
+        }
 
         <button type="button" class="reset-filters">
-            {lang === "fr" ? "Réinitialiser" : "Reset"}
+            {labels[lang].reset}
         </button>
     </div>
 
     <div class="gallery">
-        {filteredArtworks.map((artwork) => (
-                <article
-                        class="card"
-                        data-series={artwork.series}
-                        data-technique={artwork.techniqueKey}
-                        data-year={artwork.year}
-                        data-format={artwork.format}
-                        data-palette={artwork.palette}
-                >
-                    <img src={artwork.image} alt={artwork.title[lang]} />
+        {
+            artworks.map((artwork) => (
+                    <article
+                            class="card"
+                            data-filters={JSON.stringify({
+                                series: artwork.series,
+                                technique: artwork.techniqueKey,
+                                year: String(artwork.year),
+                                format: artwork.format,
+                                location: artwork.location,
+                                palette: artwork.palette,
+                            })}
+                    >
+                        <button class="image-button" type="button" data-lightbox-image={artwork.image} data-lightbox-title={artwork.title[lang]}>
+                            <img src={artwork.image} alt={artwork.title[lang]} />
+                        </button>
 
-                    <div class="card-content">
-                        <h3>{artwork.title[lang]}</h3>
+                        <div class="card-content">
+                            <h3>{artwork.title[lang]}</h3>
 
-                        <div class="artwork-meta">
-                            <span>{artwork.technique[lang]}</span>
-                            <span>{artwork.series}</span>
-                            <span>{artwork.format}</span>
-                            <span>{artwork.palette}</span>
-                            <span>{artwork.year}</span>
+                            <div class="artwork-meta">
+                                <span>{artwork.technique[lang]}</span>
+                                <span>{artwork.series}</span>
+                                <span>{artwork.format}</span>
+                                <span>{artwork.location}</span>
+                                <span>{artwork.palette}</span>
+                                <span>{artwork.year}</span>
+                            </div>
                         </div>
-                    </div>
-                </article>
-        ))}
+                    </article>
+            ))
+        }
     </div>
 </section>
+
+<div class="lightbox" hidden>
+    <div class="lightbox-frame">
+        <button class="lightbox-close" type="button">×</button>
+
+        <img class="lightbox-image" src="" alt="" />
+    </div>
+</div>
 
 <script>
     const filters = document.querySelectorAll("[data-filter]");
     const cards = document.querySelectorAll(".card");
+    const resetButton = document.querySelector(".reset-filters");
+
+    const lightbox = document.querySelector(".lightbox");
+    const lightboxImage = document.querySelector(".lightbox-image");
+    const lightboxClose = document.querySelector(".lightbox-close");
+    const imageButtons = document.querySelectorAll("[data-lightbox-image]");
 
     function applyFilters() {
-        const activeFilters: Record<string, string> = {};
-        const resetButton = document.querySelector(".reset-filters");
-
-        resetButton?.addEventListener("click", () => {
-            filters.forEach((filter) => {
-                filter.value = "";
-            });
-
-            applyFilters();
-        });
+        const activeFilters = /** @type {Record<string, string>} */ ({});
 
         filters.forEach((filter) => {
+            if (!(filter instanceof HTMLSelectElement)) return;
+
             const key = filter.dataset.filter;
             const value = filter.value;
 
-            if (value) {
+            if (key && value) {
                 activeFilters[key] = value;
             }
         });
 
         cards.forEach((card) => {
+            if (!(card instanceof HTMLElement)) return;
+
+            const cardFilters = JSON.parse(card.dataset.filters || "{}");
+
             const isVisible = Object.entries(activeFilters).every(([key, value]) => {
-                return card.dataset[key] === value;
+                return cardFilters[key] === value;
             });
 
             card.style.display = isVisible ? "block" : "none";
@@ -137,5 +160,52 @@ const labels = {
 
     filters.forEach((filter) => {
         filter.addEventListener("change", applyFilters);
+    });
+
+    resetButton?.addEventListener("click", () => {
+        filters.forEach((filter) => {
+            if (filter instanceof HTMLSelectElement) {
+                filter.value = "";
+            }
+        });
+
+        applyFilters();
+    });
+
+    imageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            if (!(button instanceof HTMLElement)) return;
+            if (!(lightbox instanceof HTMLElement)) return;
+            if (!(lightboxImage instanceof HTMLImageElement)) return;
+
+            lightboxImage.src = button.dataset.lightboxImage || "";
+            lightboxImage.alt = button.dataset.lightboxTitle || "";
+
+            lightbox.hidden = false;
+            document.body.classList.add("lightbox-open");
+        });
+    });
+
+    function closeLightbox() {
+        if (!(lightbox instanceof HTMLElement)) return;
+        if (!(lightboxImage instanceof HTMLImageElement)) return;
+
+        lightbox.hidden = true;
+        lightboxImage.src = "";
+        document.body.classList.remove("lightbox-open");
+    }
+
+    lightboxClose?.addEventListener("click", closeLightbox);
+
+    lightbox?.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
     });
 </script>
