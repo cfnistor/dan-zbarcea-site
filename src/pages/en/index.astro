@@ -2,6 +2,7 @@
 import artworks from "../../data/artworks.json";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
 ---
 
 <BaseLayout title="Dan Zbarcea" lang="en-CA">
@@ -9,13 +10,16 @@ import Sidebar from "../../components/Sidebar.astro";
         <Sidebar lang="en" page="home" />
 
         <main class="content">
-            <div class="gallery">
-                {artworks.map((artwork) => (
-                        <div class="card">
-                            <img src={artwork.image} alt={artwork.title.en} />
-                        </div>
-                ))}
-            </div>
+            <PageContent>
+                <figure class="home-quote">
+                    <blockquote>
+                        “Yesterday, we were missing freedom. Today we miss love.
+                        I’m afraid of tomorrow for we will miss humanity.”
+                    </blockquote>
+
+                    <figcaption>Mahmoud Darwish</figcaption>
+                </figure>
+            </PageContent>
         </main>
     </div>
 </BaseLayout>

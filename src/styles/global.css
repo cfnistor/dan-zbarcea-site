@@ -290,3 +290,28 @@ body.lightbox-open {
         columns: 2 160px;
     }
 }
+
+.home-quote {
+    max-width: 720px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+
+.home-quote blockquote {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.45;
+    font-style: italic;
+    font-weight: 300;
+    color: #5f0822;
+}
+
+.home-quote figcaption {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #666;
+}
+
+.home-quote figcaption::before {
+    content: "— ";
+}

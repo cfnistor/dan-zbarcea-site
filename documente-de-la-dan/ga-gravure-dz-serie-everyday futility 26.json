@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ga-001",
+    "title": {
+      "fr": "lino DZ 26 (1)",
+      "en": "lino DZ 26 (1)"
+    },
+    "category": "gravure",
+    "series": "Everyday futility",
+    "technique": {
+      "fr": "linogravure",
+      "en": "linocut"
+    },
+    "techniqueKey": "gravure",
+    "year": 2024,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/700?ga1"
+  },
+  {
+    "id": "ga-002",
+    "title": {
+      "fr": "lino DZ 26 (2)",
+      "en": "lino DZ 26 (2)"
+    },
+    "category": "gravure",
+    "series": "everyday futility",
+    "technique": {
+      "fr": "linogravure",
+      "en": "linocut"
+    },
+    "techniqueKey": "gravure",
+    "year": 2024,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/450?ga2"
+  },
+  {
+    "id": "ga-003",
+    "title": {
+      "fr": "lino DZ 26 (3)",
+      "en": "lino DZ 26 (3)"
+    },
+    "category": "gravure",
+    "series": "everyday futility",
+    "technique": {
+      "fr": "linogravure",
+      "en": "linocut"
+    },
+    "techniqueKey": "gravure",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/600?ga3"
+  },
+  {
+    "id": "ga-004",
+    "title": {
+      "fr": "lino DZ 26 (4)",
+      "en": "lino DZ 26 (4)"
+    },
+    "category": "gravure",
+    "series": "everyday futility",
+    "technique": {
+      "fr": "linogravure",
+      "en": "linocut"
+    },
+    "techniqueKey": "gravure",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/500?ga4"
+  },
+  {
+    "id": "ga-005",
+    "title": {
+      "fr": "lino DZ 26 (5)",
+      "en": "lino DZ 26 (5)"
+    },
+    "category": "gravure",
+    "series": "everyday futility",
+    "technique": {
+      "fr": "linogravure",
+      "en": "linocut"
+    },
+    "techniqueKey": "gravure",
+    "year": 2011,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/750?ga5"
+  }
+]

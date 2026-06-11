@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ga-001",
+    "title": { "fr": "arch a dz 26 (1)", "en": "arch a dz 26 (1)" },
+    "category": "drawing",
+    "series": "aberant architecture",
+    "technique": { "fr": "dessin", "en": "drawing" },
+    "techniqueKey": "drawing",
+    "year": 2010,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/700?ga1"
+  },
+
+  {
+    "id": "ga-002",
+    "title": { "fr": "arch a dz 26 (2)", "en": "arch a dz 26 (2)" },
+    "category": "drawing",
+    "series": "aberant architecture",
+    "technique": { "fr": "dessin", "en": "drawing" },
+    "techniqueKey": "drawing",
+    "year": 2010,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/450?ga2"
+  },
+
+  {
+    "id": "ga-003",
+    "title": { "fr": "arch a dz 26 (3)", "en": "arch a dz 26 (3)" },
+    "category": "drawing",
+    "series": "aberant architecture",
+    "technique": { "fr": "dessin", "en": "drawing" },
+    "techniqueKey": "drawing",
+    "year": 2010,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/600/600?ga3"
+  },
+
+  {
+    "id": "ga-004",
+    "title": { "fr": "arch a dz 26 (4)", "en": "arch a dz 26 (4)" },
+    "category": "drawing",
+    "series": "aberant architecture",
+    "technique": { "fr": "dessin", "en": "drawing" },
+    "techniqueKey": "drawing",
+    "year": 2010,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/700/500?ga4"
+  },
+
+  {
+    "id": "ga-005",
+    "title": { "fr": "arch a dz 26 (5)", "en": "arch a dz 26 (5)" },
+    "category": "drawing",
+    "series": "aberant architecture",
+    "technique": { "fr": "dessin", "en": "drawing" },
+    "techniqueKey": "drawing",
+    "year": 2010,
+    "format": "landscape",
+    "palette": "monochrome",
+    "image": "https://picsum.photos/500/750?ga5"
+  }
+]

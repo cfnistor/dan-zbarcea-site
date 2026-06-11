@@ -13,5 +13,11 @@ const {
             <p class="page-subtitle">{subtitle}</p>
     )}
 
-    <div class="page-text" set:html={text} />
+    {text ? (
+            <div class="page-text" set:html={text} />
+    ) : (
+            <div class="page-text">
+                <slot />
+            </div>
+    )}
 </section>

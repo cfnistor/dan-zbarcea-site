@@ -2,6 +2,7 @@
 import artworks from "../../data/artworks.json";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
+import PageContent from "../../components/PageContent.astro";
 ---
 
 <BaseLayout title="Dan Zbarcea" lang="fr-CA">
@@ -9,13 +10,15 @@ import Sidebar from "../../components/Sidebar.astro";
         <Sidebar lang="fr" page="home" />
 
         <main class="content">
-            <div class="gallery">
-                {artworks.map((artwork) => (
-                        <div class="card">
-                            <img src={artwork.image} alt={artwork.title.fr} />
-                        </div>
-                ))}
-            </div>
+            <PageContent>
+            <figure class="home-quote">
+                <blockquote>
+                    « Hier, nous manquions de liberté. Aujourd’hui, nous manquons d’amour. J’ai peur de demain, car nous manquerons d’humanité. »
+                </blockquote>
+
+                <figcaption>Mahmoud Darwish</figcaption>
+            </figure>
+            </PageContent>
         </main>
     </div>
 </BaseLayout>
