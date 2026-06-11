@@ -112,6 +112,10 @@ body {
     color: var(--color-primary-dark);
 }
 
+.page-text
+{
+    margin-bottom: 30px;
+}
 .page-subtitle {
     margin: 0 0 42px;
     font-size: 1.1rem;
