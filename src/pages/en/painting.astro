@@ -2,6 +2,49 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Sidebar from "../../components/Sidebar.astro";
 import PageContent from "../../components/PageContent.astro";
+import ArtworkGallery from "../../components/ArtworkGallery.astro";
+import paintingArtworks from "../../data/painting.json";
+
+const paintingFilters = [
+    {
+        key: "series",
+        label: { fr: "Série", en: "Series" },
+        options: [
+            { value: "precarious line", label: { fr: "Ligne précaire", en: "Precarious Line" } },
+            { value: "ecce homo", label: { fr: "Ecce Homo", en: "Ecce Homo" } },
+        ],
+    },
+    {
+        key: "technique",
+        label: { fr: "Technique", en: "Technique" },
+        options: [
+            { value: "acrylic", label: { fr: "Acrylique", en: "Acrylic" } },
+            { value: "mixed media", label: { fr: "Technique mixte", en: "Mixed media" } },
+        ],
+    },
+    {
+        key: "year",
+        label: { fr: "Année", en: "Year" },
+        options: [
+            { value: "2022", label: { fr: "2022", en: "2022" } },
+            { value: "2025", label: { fr: "2025", en: "2025" } },
+        ],
+    },
+    {
+        key: "format",
+        label: { fr: "Format", en: "Format" },
+        options: [
+            { value: "landscape", label: { fr: "Paysage", en: "Landscape" } },
+        ],
+    },
+    {
+        key: "palette",
+        label: { fr: "Couleur", en: "Color" },
+        options: [
+            { value: "colour", label: { fr: "Couleur", en: "Colour" } },
+        ],
+    },
+];
 ---
 
 <BaseLayout title="Painting | Dan Zbarcea" lang="en-CA">
@@ -14,7 +57,13 @@ import PageContent from "../../components/PageContent.astro";
 
             <PageContent
                     title="Painting"
-                    text="This section will present a selection of paintings exploring light, memory and emotion through different techniques and inspirations."
+                    text="This section presents a selection of paintings exploring line, presence, memory and emotion through acrylic and mixed media works."
+            />
+
+            <ArtworkGallery
+                    lang="en"
+                    artworks={paintingArtworks}
+                    filters={paintingFilters}
             />
 
         </main>

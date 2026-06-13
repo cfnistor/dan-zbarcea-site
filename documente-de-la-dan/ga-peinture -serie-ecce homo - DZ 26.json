@@ -1,0 +1,90 @@
+[
+  {
+    "id": "peint-001",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "peinture-001.jpg"
+  },
+  {
+    "id": "peint-002",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "peinture-002.jpg"
+  }
+  {
+    "id": "peint-003",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "peinture-003.jpg"
+  }
+  {
+    "id": "peint-004",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "peinture-004.jpg"
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

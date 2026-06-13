@@ -1,0 +1,164 @@
+[
+  {
+    "id": "peint-001",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/precarious-line/precarious-line-001.jpg"
+  },
+  {
+    "id": "peint-002",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/precarious-line/precarious-line-002.jpg"
+  },
+  {
+    "id": "peint-003",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/precarious-line/precarious-line-003.jpg"
+  },
+  {
+    "id": "peint-004",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/precarious-line/precarious-line-004.jpg"
+  },
+  {
+    "id": "peint-005",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/precarious-line/precarious-line-005.jpg"
+  },
+  {
+    "id": "peint-006",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/ecce-homo/ecce-homo-001.jpg"
+  },
+  {
+    "id": "peint-007",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/ecce-homo/ecce-homo-002.jpg"
+  },
+  {
+    "id": "peint-008",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/ecce-homo/ecce-homo-003.jpg"
+  },
+  {
+    "id": "peint-009",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "palette": "colour",
+    "image": "/images/painting/ecce-homo/ecce-homo-004.jpg"
+  }
+]
