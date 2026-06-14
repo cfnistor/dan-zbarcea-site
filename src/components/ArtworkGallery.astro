@@ -91,7 +91,13 @@ const labels = {
                                 palette: artwork.palette,
                             })}
                     >
-                        <button class="image-button" type="button" data-lightbox-image={artwork.image} data-lightbox-title={artwork.title[lang]}>
+                        <button
+                                class="image-button"
+                                type="button"
+                                data-lightbox-image={artwork.image}
+                                data-lightbox-title={artwork.title[lang]}
+                                data-lightbox-meta={`${artwork.technique[lang]} · ${artwork.series} · ${artwork.year}`}
+                        >
                             <img src={artwork.image} alt={artwork.title[lang]} />
                         </button>
 
@@ -115,9 +121,18 @@ const labels = {
 
 <div class="lightbox" hidden>
     <div class="lightbox-frame">
-        <button class="lightbox-close" type="button">×</button>
+        <button class="lightbox-close" type="button" aria-label="Close">×</button>
+
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
 
         <img class="lightbox-image" src="" alt="" />
+
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+
+        <div class="lightbox-caption">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-meta"></p>
+        </div>
     </div>
 </div>
 
@@ -130,6 +145,13 @@ const labels = {
     const lightboxImage = document.querySelector(".lightbox-image");
     const lightboxClose = document.querySelector(".lightbox-close");
     const imageButtons = document.querySelectorAll("[data-lightbox-image]");
+
+    const lightboxTitle = document.querySelector(".lightbox-title");
+    const lightboxMeta = document.querySelector(".lightbox-meta");
+    const lightboxPrev = document.querySelector(".lightbox-prev");
+    const lightboxNext = document.querySelector(".lightbox-next");
+
+    let currentLightboxIndex = 0;
 
     function applyFilters() {
         const activeFilters = /** @type {Record<string, string>} */ ({});
@@ -172,18 +194,66 @@ const labels = {
         applyFilters();
     });
 
+    function getVisibleImageButtons() {
+        return Array.from(imageButtons).filter((button) => {
+            if (!(button instanceof HTMLElement)) return false;
+
+            const card = button.closest(".card");
+
+            if (!(card instanceof HTMLElement)) return false;
+
+            return card.style.display !== "none";
+        });
+    }
+
+    function openLightbox(button) {
+        if (!(button instanceof HTMLElement)) return;
+        if (!(lightbox instanceof HTMLElement)) return;
+        if (!(lightboxImage instanceof HTMLImageElement)) return;
+
+        lightboxImage.src = button.dataset.lightboxImage || "";
+        lightboxImage.alt = button.dataset.lightboxTitle || "";
+
+        if (lightboxTitle instanceof HTMLElement) {
+            lightboxTitle.textContent = button.dataset.lightboxTitle || "";
+        }
+
+        if (lightboxMeta instanceof HTMLElement) {
+            lightboxMeta.textContent = button.dataset.lightboxMeta || "";
+        }
+
+        lightbox.hidden = false;
+        document.body.classList.add("lightbox-open");
+    }
+
+    function showLightboxImage(direction) {
+        const visibleButtons = getVisibleImageButtons();
+
+        if (visibleButtons.length === 0) return;
+
+        currentLightboxIndex =
+            (currentLightboxIndex + direction + visibleButtons.length) %
+            visibleButtons.length;
+
+        openLightbox(visibleButtons[currentLightboxIndex]);
+    }
+
     imageButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            if (!(button instanceof HTMLElement)) return;
-            if (!(lightbox instanceof HTMLElement)) return;
-            if (!(lightboxImage instanceof HTMLImageElement)) return;
+            const visibleButtons = getVisibleImageButtons();
 
-            lightboxImage.src = button.dataset.lightboxImage || "";
-            lightboxImage.alt = button.dataset.lightboxTitle || "";
+            currentLightboxIndex = visibleButtons.indexOf(button);
 
-            lightbox.hidden = false;
-            document.body.classList.add("lightbox-open");
+            openLightbox(button);
         });
+    });
+
+    lightboxPrev?.addEventListener("click", () => {
+        showLightboxImage(-1);
+    });
+
+    lightboxNext?.addEventListener("click", () => {
+        showLightboxImage(1);
     });
 
     function closeLightbox() {
@@ -206,6 +276,14 @@ const labels = {
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
             closeLightbox();
+        }
+
+        if (event.key === "ArrowLeft") {
+            showLightboxImage(-1);
+        }
+
+        if (event.key === "ArrowRight") {
+            showLightboxImage(1);
         }
     });
 </script>

@@ -32,6 +32,13 @@ body {
     padding: 60px 40px;
 }
 
+/* Hidden on desktop */
+.mobile-header,
+.mobile-brand,
+.menu-toggle {
+    display: none;
+}
+
 .sidebar h1 {
     font-size: 56px;
     line-height: 0.92;
@@ -112,10 +119,10 @@ body {
     color: var(--color-primary-dark);
 }
 
-.page-text
-{
+.page-text {
     margin-bottom: 30px;
 }
+
 .page-subtitle {
     margin: 0 0 42px;
     font-size: 1.1rem;
@@ -277,26 +284,76 @@ body.lightbox-open {
     overflow: hidden;
 }
 
-@media (max-width: 600px) {
-    .gallery {
-        columns: 1;
-    }
-
-    .filters {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .filters select,
-    .reset-filters {
-        width: auto;
-        max-width: 100%;
-        margin-bottom: 0;
-    }
+.lightbox-caption {
+    margin-top: 18px;
+    text-align: center;
 }
 
+.lightbox-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: var(--color-primary-dark);
+}
 
+.lightbox-meta {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--color-primary);
+    font-size: 42px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.lightbox-prev {
+    left: 8px;
+}
+
+.lightbox-next {
+    right: 8px;
+}
+
+.lightbox-nav:hover {
+    background: white;
+}
+
+.home-quote {
+    max-width: 720px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+
+.home-quote blockquote {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.45;
+    font-style: italic;
+    font-weight: 300;
+    color: #5f0822;
+}
+
+.home-quote figcaption {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #666;
+}
+
+.home-quote figcaption::before {
+    content: "— ";
+}
+
+/* Tablet / Mobile */
 @media (max-width: 900px) {
     .page {
         grid-template-columns: 1fr;
@@ -319,6 +376,7 @@ body.lightbox-open {
     }
 
     .mobile-brand {
+        display: inline-block;
         color: var(--color-primary);
         font-size: 24px;
         font-weight: 700;
@@ -401,27 +459,22 @@ body.lightbox-open {
     }
 }
 
-.home-quote {
-    max-width: 720px;
-    margin: 120px auto 0;
-    text-align: center;
-}
+/* Small mobile */
+@media (max-width: 600px) {
+    .gallery {
+        columns: 1;
+    }
 
-.home-quote blockquote {
-    margin: 0;
-    font-size: 30px;
-    line-height: 1.45;
-    font-style: italic;
-    font-weight: 300;
-    color: #5f0822;
-}
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-.home-quote figcaption {
-    margin-top: 24px;
-    font-size: 16px;
-    color: #666;
-}
-
-.home-quote figcaption::before {
-    content: "— ";
+    .filters select,
+    .reset-filters {
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
 }
