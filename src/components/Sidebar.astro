@@ -31,6 +31,7 @@ const menu = {
         { label: "Contact", href: "/en/contact", page: "contact" },
     ],
 };
+
 const languageSwitch = {
     home: { fr: "/fr/", en: "/en/" },
     "graphic-art": { fr: "/fr/art-graphique", en: "/en/graphic-art" },
@@ -43,24 +44,53 @@ const languageSwitch = {
 ---
 
 <aside class="sidebar">
-    <h1>Dan<br />Zbarcea</h1>
+    <div class="mobile-header">
+        <a class="mobile-brand" href={lang === "fr" ? "/fr/" : "/en/"}>
+            Dan Zbarcea
+        </a>
 
-    <nav>
-        {menu[lang].map((item) => (
-                <a href={item.href} class={page === item.page ? "active" : ""}>
-                    {item.label}
-                </a>
-        ))}
-    </nav>
-
-    <div class="language-switcher">
-        <a href={languageSwitch[page].fr}>FR</a>
-        <span>|</span>
-        <a href={languageSwitch[page].en}>EN</a>
+        <button
+                class="menu-toggle"
+                type="button"
+                aria-label={lang === "fr" ? "Ouvrir le menu" : "Open menu"}
+                aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 
-    <div class="infos">
-        {lang === "fr" ? "Artiste visuel" : "Visual artist"}<br />
-        Montréal, Québec
+    <div class="sidebar-panel">
+        <h1>Dan<br />Zbarcea</h1>
+
+        <nav>
+            {menu[lang].map((item) => (
+                    <a href={item.href} class={page === item.page ? "active" : ""}>
+                        {item.label}
+                    </a>
+            ))}
+        </nav>
+
+        <div class="language-switcher">
+            <a href={languageSwitch[page].fr}>FR</a>
+            <span>|</span>
+            <a href={languageSwitch[page].en}>EN</a>
+        </div>
+
+        <div class="infos">
+            {lang === "fr" ? "Artiste visuel" : "Visual artist"}<br />
+            Montréal, Québec
+        </div>
     </div>
 </aside>
+
+<script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    menuButton?.addEventListener("click", () => {
+        const isOpen = sidebar?.classList.toggle("is-open") ?? false;
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+</script>

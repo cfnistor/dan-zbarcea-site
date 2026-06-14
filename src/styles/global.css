@@ -277,17 +277,123 @@ body.lightbox-open {
     overflow: hidden;
 }
 
+@media (max-width: 600px) {
+    .gallery {
+        columns: 1;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filters select,
+    .reset-filters {
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+
 @media (max-width: 900px) {
     .page {
         grid-template-columns: 1fr;
     }
 
     .sidebar {
-        padding-bottom: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 900;
+        padding: 0;
+        background: var(--color-bg);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+    }
+
+    .mobile-brand {
+        color: var(--color-primary);
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--color-border);
+        background: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--color-primary);
+        transition:
+                transform 0.2s ease,
+                opacity 0.2s ease;
+    }
+
+    .sidebar.is-open .menu-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .sidebar.is-open .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .sidebar.is-open .menu-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .sidebar-panel {
+        display: none;
+        padding: 10px 24px 28px;
+    }
+
+    .sidebar.is-open .sidebar-panel {
+        display: block;
+    }
+
+    .sidebar h1 {
+        display: none;
+    }
+
+    .sidebar nav {
+        margin-bottom: 24px;
+    }
+
+    .sidebar nav a {
+        margin: 14px 0;
+        font-size: 18px;
+    }
+
+    .language-switcher {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .infos {
+        margin-top: 28px;
     }
 
     .content {
-        padding-top: 0;
+        padding: 28px 24px;
     }
 
     .gallery {
