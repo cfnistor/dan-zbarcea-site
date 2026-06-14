@@ -1,14 +1,42 @@
 ---
 import "../styles/global.css";
 
-const { title = "Dan Zbarcea", lang = "fr-CA" } = Astro.props;
+const {
+    title = "Dan Zbarcea",
+    description = "Dan Zbarcea is a visual artist working across photography, painting and graphic art.",
+    lang = "fr-CA",
+    image = "/images/og-image.jpg",
+} = Astro.props;
+
+const siteUrl = "https://danzbarcea.com";
+const pageUrl = Astro.url.href;
+const imageUrl = image.startsWith("http")
+    ? image
+    : `${siteUrl}${image}`;
 ---
 
 <html lang={lang}>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
     <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="canonical" href={pageUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={imageUrl} />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
 </head>
 
 <body>
