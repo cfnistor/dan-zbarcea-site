@@ -1,0 +1,13 @@
+---
+const { lang = "fr" } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+    <p>
+        Dan Zbarcea ·
+        {lang === "fr" ? "Artiste visuel" : "Visual Artist"} ·
+        Montréal, Québec ·
+        © {year}
+    </p>
+</footer>

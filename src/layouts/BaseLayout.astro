@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro"
 import "../styles/global.css";
 
 const {
@@ -41,5 +42,6 @@ const imageUrl = image.startsWith("http")
 
 <body>
 <slot />
+<Footer lang={lang.startsWith("fr") ? "fr" : "en"} />
 </body>
 </html>

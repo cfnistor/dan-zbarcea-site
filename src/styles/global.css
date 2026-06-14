@@ -478,3 +478,16 @@ body.lightbox-open {
         margin-bottom: 0;
     }
 }
+
+.site-footer {
+    margin: 80px 0 30px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-muted);
+    text-align: center;
+}

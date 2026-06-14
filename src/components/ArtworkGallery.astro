@@ -98,7 +98,12 @@ const labels = {
                                 data-lightbox-title={artwork.title[lang]}
                                 data-lightbox-meta={`${artwork.technique[lang]} · ${artwork.series} · ${artwork.year}`}
                         >
-                            <img src={artwork.image} alt={artwork.title[lang]} />
+                            <img
+                                    src={artwork.image}
+                                    alt={artwork.title[lang]}
+                                    loading="lazy"
+                                    decoding="async"
+                            />
                         </button>
 
                         <div class="card-content">
