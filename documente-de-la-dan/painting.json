@@ -1,0 +1,514 @@
+[
+  {
+    "id": "peint-001",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/precarious-line/precarious-line-001.jpg"
+  },
+  {
+    "id": "peint-002",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/precarious-line/precarious-line-002.jpg"
+  },
+  {
+    "id": "peint-003",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/precarious-line/precarious-line-003.jpg"
+  },
+  {
+    "id": "peint-004",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/precarious-line/precarious-line-004.jpg"
+  },
+  {
+    "id": "peint-005",
+    "title": {
+      "fr": "ligne precaire",
+      "en": "precarious line"
+    },
+    "category": "painting",
+    "series": "precarious line",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/precarious-line/precarious-line-005.jpg"
+  },
+  {
+    "id": "peint-006",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "image": "/images/painting/ecce-homo/ecce-homo-001.jpg"
+  },
+  {
+    "id": "peint-007",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "image": "/images/painting/ecce-homo/ecce-homo-002.jpg"
+  },
+  {
+    "id": "peint-008",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "image": "/images/painting/ecce-homo/ecce-homo-003.jpg"
+  },
+  {
+    "id": "peint-009",
+    "title": {
+      "fr": "ecce homo",
+      "en": "ecce homo"
+    },
+    "category": "painting",
+    "series": "ecce homo",
+    "technique": {
+      "fr": "mixte",
+      "en": "mixed media"
+    },
+    "techniqueKey": "peinture",
+    "year": 2022,
+    "format": "landscape",
+    "image": "/images/painting/ecce-homo/ecce-homo-004.jpg"
+  },
+  {
+    "id": "peint-010",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2023,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-001.jpg"
+  },
+  {
+    "id": "peint-011",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-002.jpg"
+  },
+  {
+    "id": "peint-012",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2025,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-003.jpg"
+  },
+  {
+    "id": "peint-013",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2024,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-004.jpg"
+  },
+  {
+    "id": "peint-014",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-005.jpg"
+  },
+  {
+    "id": "peint-015",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-006.jpg"
+  },
+  {
+    "id": "peint-016",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-007.jpg"
+  },
+  {
+    "id": "peint-017",
+    "title": {
+      "fr": "psycho objet",
+      "en": "psycho object"
+    },
+    "category": "painting",
+    "series": "psycho object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/psycho object/psycho object-008.jpg"
+  },
+  {
+    "id": "peint-018",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 1999,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-001.jpg"
+  },
+  {
+    "id": "peint-019",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-002.jpg"
+  },
+  {
+    "id": "peint-020",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-003.jpg"
+  },
+  {
+    "id": "peint-021",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-004.jpg"
+  },
+  {
+    "id": "peint-022",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-005.jpg"
+  },
+  {
+    "id": "peint-023",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-006.jpg"
+  },
+  {
+    "id": "peint-024",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-007.jpg"
+  },
+  {
+    "id": "peint-025",
+    "title": {
+      "fr": "objet concret",
+      "en": "concrete object"
+    },
+    "category": "painting",
+    "series": "concrete object",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2020,
+    "format": "landscape",
+    "image": "/images/painting/concrete object/concrete object-008.jpg"
+  },
+  {
+    "id": "peint-026",
+    "title": {
+      "fr": "psycho espace",
+      "en": "psycho space"
+    },
+    "category": "painting",
+    "series": "psycho space",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2024,
+    "format": "landscape",
+    "image": "/images/painting/psycho space/psycho space-001.jpg"
+  },
+  {
+    "id": "peint-027",
+    "title": {
+      "fr": "psycho espace",
+      "en": "psycho space"
+    },
+    "category": "painting",
+    "series": "psycho space",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2026,
+    "format": "landscape",
+    "image": "/images/painting/psycho space/psycho space-002.jpg"
+  },
+  {
+    "id": "peint-028",
+    "title": {
+      "fr": "psycho espace",
+      "en": "psycho space"
+    },
+    "category": "painting",
+    "series": "psycho space",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2026,
+    "format": "landscape",
+    "image": "/images/painting/psycho space/psycho space-003.jpg"
+  },
+  {
+    "id": "peint-029",
+    "title": {
+      "fr": "psycho espace",
+      "en": "psycho space"
+    },
+    "category": "painting",
+    "series": "psycho space",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2024,
+    "format": "landscape",
+    "image": "/images/painting/psycho space/psycho space-004.jpg"
+  },
+  {
+    "id": "peint-030",
+    "title": {
+      "fr": "psycho espace",
+      "en": "psycho space"
+    },
+    "category": "painting",
+    "series": "psycho space",
+    "technique": {
+      "fr": "acrylique",
+      "en": "acrylic"
+    },
+    "techniqueKey": "peinture",
+    "year": 2024,
+    "format": "landscape",
+    "image": "/images/painting/psycho space/psycho space-005.jpg"
+  }   
+]
+  
+  
