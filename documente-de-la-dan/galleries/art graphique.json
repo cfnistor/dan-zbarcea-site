@@ -1,0 +1,492 @@
+[
+{
+  "id": "everyday futility-001",
+  "title": {
+    "fr": "Futilité quotidienne",
+    "en": "Everyday futility"
+  },
+  "category": "art graphique",
+  "series": "Everyday futility",
+  "technique": {
+    "fr": "linogravure",
+    "en": "linocut"
+  },
+  "techniqueKey": "gravure",
+  "year": 2024,
+  "format": "landscape",
+  "image": "/images/gravure/art graphique/everyday futility-001.jpg"
+},
+{
+  "id": "everyday futility-002",
+  "title": {
+    "fr": "Futilité quotidienne",
+    "en": "Everyday futility"
+  },
+  "category": "art graphique",
+  "series": "Everyday futility",
+  "technique": {
+    "fr": "linogravure",
+    "en": "linocut"
+  },
+  "techniqueKey": "gravure",
+  "year": 2024,
+  "format": "landscape",
+  "image": "/images/gravure/art graphique/everyday futility-002.jpg"
+},
+{
+  "id": "everyday futility-003",
+  "title": {
+    "fr": "Futilité quotidienne",
+    "en": "Everyday futility"
+  },
+  "category": "art graphique",
+  "series": "Everyday futility",
+  "technique": {
+    "fr": "linogravure",
+    "en": "linocut"
+  },
+  "techniqueKey": "gravure",
+  "year": 2024,
+  "format": "landscape",
+  "image": "/images/gravure/art graphique/everyday futility-003.jpg"
+},
+{
+  "id": "everyday futility-004",
+  "title": {
+    "fr": "Futilité quotidienne",
+    "en": "Everyday futility"
+  },
+  "category": "art graphique",
+  "series": "Everyday futility",
+  "technique": {
+    "fr": "linogravure",
+    "en": "linocut"
+  },
+  "techniqueKey": "gravure",
+  "year": 2024,
+  "format": "landscape",
+  "image": "/images/gravure/art graphique/everyday futility-004.jpg"
+},
+{
+  "id": "everyday futility-005",
+  "title": {
+    "fr": "Futilité quotidienne",
+    "en": "Everyday futility"
+  },
+  "category": "art graphique",
+  "series": "Everyday futility",
+  "technique": {
+    "fr": "linogravure",
+    "en": "linocut"
+  },
+  "techniqueKey": "gravure",
+  "year": 2024,
+  "format": "landscape",
+  "image": "/images/gravure/art graphique/everyday futility-005.jpg"
+},
+{
+"id": "night-001",
+  "title": {
+    "fr": "nuit",
+    "en": "night"
+  },
+  "category": "art graphique",
+  "series": "nuit",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "technique mixte",
+  "year": 2008,
+  "format": "landscape",
+  "image": "/images/night/art graphique/night-001.jpg"
+},
+{  
+"id": "night-002",
+  "title": {
+    "fr": "nuit",
+    "en": "night"
+  },
+  "category": "art graphique",
+  "series": "nuit",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "technique mixte",
+  "year": 2008,
+  "format": "landscape",
+  "image": "/images/night/art graphique/night-002.jpg"
+},
+{
+  "id": "night-003",
+  "title": {
+    "fr": "nuit",
+    "en": "night"
+  },
+  "category": "art graphique",
+  "series": "nuit",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "technique mixte",
+  "year": 2008,
+  "format": "landscape",
+  "image": "/images/night/art graphique/night-003.jpg",
+},
+{
+  "id": "architecture-001",
+  "title": {
+    "fr": "architecture aberante",
+    "en": "aberrant architecture"
+  },
+  "category": "art graphique",
+  "series": "aberrant architecture",
+  "technique": {
+    "fr": "dessin",
+    "en": "drawing"
+  },
+  "techniqueKey": "drawing",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/architecture/art graphique/aberrant architecture-001.jpg",
+},
+{
+  "id": "architecture-002",
+  "title": {
+    "fr": "architecture aberante",
+    "en": "aberrant architecture"
+  },
+  "category": "art graphique",
+  "series": "aberrant architecture",
+  "technique": {
+    "fr": "dessin",
+    "en": "drawing"
+  },
+  "techniqueKey": "drawing",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/architecture/art graphique/aberrant architecture-002.jpg",
+},
+{
+  "id": "architecture-003",
+  "title": {
+    "fr": "architecture aberante",
+    "en": "aberrant architecture"
+  },
+  "category": "art graphique",
+  "series": "aberrant architecture",
+  "technique": {
+    "fr": "dessin",
+    "en": "drawing"
+  },
+  "techniqueKey": "drawing",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/architecture/art graphique/aberrant architecture-003.jpg",
+},
+{
+  "id": "architecture-004",
+  "title": {
+    "fr": "architecture aberante",
+    "en": "aberrant architecture"
+  },
+  "category": "art graphique",
+  "series": "aberrant architecture",
+  "technique": {
+    "fr": "dessin",
+    "en": "drawing"
+  },
+  "techniqueKey": "drawing",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/architecture/art graphique/aberrant architecture-004.jpg",
+},
+{
+  "id": "architecture-005",
+  "title": {
+    "fr": "architecture aberante",
+    "en": "aberrant architecture"
+  },
+  "category": "art graphique",
+  "series": "aberrant architecture",
+  "technique": {
+    "fr": "dessin",
+    "en": "drawing"
+  },
+  "techniqueKey": "drawing",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/architecture/art graphique/aberrant architecture-005.jpg",
+},
+{
+  "id": "enfantasque-001",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-001.jpg",
+},  
+{
+  "id": "enfantasque-002",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2010,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-002.jpg",
+},  
+{
+  "id": "enfantasque-003",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2011,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-003.jpg",
+},  
+{
+  "id": "enfantasque-004",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2011,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-004.jpg",
+},  
+{
+  "id": "enfantasque-005",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2011,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-005.jpg",
+},  
+{
+  "id": "enfantasque-006",
+  "title": {
+    "fr": "enfantasque",
+    "en": "childish"
+  },
+  "category": "art graphique",
+  "series": "enfantasque",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2011,
+  "format": "landscape",
+  "image": "/images/enfantasque/art graphique/enfantasque-006.jpg",
+},
+{
+  "id": "antiadvertise-001",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-001.jpg",
+},    
+{
+  "id": "antiadvertise-002",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-002.jpg",
+},    
+{
+  "id": "antiadvertise-003",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-003.jpg",
+},    
+{
+  "id": "antiadvertise-004",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-004.jpg",
+},    
+{
+  "id": "antiadvertise-005",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-005.jpg",
+},    
+{
+  "id": "antiadvertise-006",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-006.jpg",
+},    
+{
+  "id": "antiadvertise-007",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-007.jpg",
+},    
+{
+  "id": "antiadvertise-008",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-008.jpg",
+},    
+{
+  "id": "antiadvertise-009",
+  "title": {
+    "fr": "antipublicité",
+    "en": "antiadvertise"
+  },
+  "category": "art graphique",
+  "series": "antiadvertise",
+  "technique": {
+    "fr": "mixte",
+    "en": "mixed media"
+  },
+  "techniqueKey": "mixed media",
+  "year": 2021,
+  "format": "landscape",
+  "image": "/images/antiadvertise/art graphique/antiadvertise-009.jpg",
+},
+]    
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
