@@ -16,7 +16,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-001.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-001.jpg"
   },
   {
     "id": "ph-002",
@@ -35,7 +35,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-002.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-002.jpg"
   },
   {
     "id": "ph-003",
@@ -54,7 +54,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-003.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-003.jpg"
   },
   {
     "id": "ph-004",
@@ -73,7 +73,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-004.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-004.jpg"
   },
   {
     "id": "ph-005",
@@ -92,7 +92,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-005.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-005.jpg"
   },
   {
     "id": "ph-006",
@@ -111,7 +111,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-006.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-006.jpg"
   },
   {
     "id": "ph-007",
@@ -130,7 +130,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-007.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-007.jpg"
   },
   {
     "id": "ph-008",
@@ -149,7 +149,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-008.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-008.jpg"
   },
   {
     "id": "ph-009",
@@ -168,7 +168,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-009.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-009.jpg"
   },
   {
     "id": "ph-010",
@@ -187,7 +187,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-010.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-010.jpg"
   },
   {
     "id": "ph-011",
@@ -206,7 +206,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-011.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-011.jpg"
   },
   {
     "id": "ph-012",
@@ -225,7 +225,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-012.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-012.jpg"
   },
   {
     "id": "ph-013",
@@ -244,7 +244,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/self-sufficient/self-sufficient-013.jpg"
+    "image": "/src/assets/photography/self-sufficient/self-sufficient-013.jpg"
   },
   {
     "id": "ph-014",
@@ -263,7 +263,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-001.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-001.jpg"
   },
   {
     "id": "ph-015",
@@ -282,7 +282,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-002.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-002.jpg"
   },
   {
     "id": "ph-016",
@@ -301,7 +301,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-003.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-003.jpg"
   },
   {
     "id": "ph-017",
@@ -320,7 +320,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-004.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-004.jpg"
   },
   {
     "id": "ph-018",
@@ -339,7 +339,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-005.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-005.jpg"
   },
   {
     "id": "ph-019",
@@ -358,7 +358,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-006.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-006.jpg"
   },
   {
     "id": "ph-020",
@@ -377,7 +377,7 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-007.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-007.jpg"
   },
   {
     "id": "ph-021",
@@ -396,6 +396,6 @@
     "format": "landscape",
     "location": "not-specified",
     "palette": "monochrome",
-    "image": "/images/photography/post-photography/post-photography-008.jpg"
+    "image": "/src/assets/photography/post-photography/post-photography-008.jpg"
   }
 ]

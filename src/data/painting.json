@@ -9,7 +9,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/precarious-line/precarious-line-001.jpg"
+    "image": "/src/assets/painting/precarious-line/precarious-line-001.jpg"
   },
   {
     "id": "peint-002",
@@ -21,7 +21,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/precarious-line/precarious-line-002.jpg"
+    "image": "/src/assets/painting/precarious-line/precarious-line-002.jpg"
   },
   {
     "id": "peint-003",
@@ -33,7 +33,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/precarious-line/precarious-line-003.jpg"
+    "image": "/src/assets/painting/precarious-line/precarious-line-003.jpg"
   },
   {
     "id": "peint-004",
@@ -45,7 +45,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/precarious-line/precarious-line-004.jpg"
+    "image": "/src/assets/painting/precarious-line/precarious-line-004.jpg"
   },
   {
     "id": "peint-005",
@@ -57,7 +57,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/precarious-line/precarious-line-005.jpg"
+    "image": "/src/assets/painting/precarious-line/precarious-line-005.jpg"
   },
   {
     "id": "peint-006",
@@ -69,7 +69,7 @@
     "year": 2022,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/ecce-homo/ecce-homo-001.jpg"
+    "image": "/src/assets/painting/ecce-homo/ecce-homo-001.jpg"
   },
   {
     "id": "peint-007",
@@ -81,7 +81,7 @@
     "year": 2022,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/ecce-homo/ecce-homo-002.jpg"
+    "image": "/src/assets/painting/ecce-homo/ecce-homo-002.jpg"
   },
   {
     "id": "peint-008",
@@ -93,7 +93,7 @@
     "year": 2022,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/ecce-homo/ecce-homo-003.jpg"
+    "image": "/src/assets/painting/ecce-homo/ecce-homo-003.jpg"
   },
   {
     "id": "peint-009",
@@ -105,7 +105,7 @@
     "year": 2022,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/ecce-homo/ecce-homo-004.jpg"
+    "image": "/src/assets/painting/ecce-homo/ecce-homo-004.jpg"
   },
   {
     "id": "peint-010",
@@ -117,7 +117,7 @@
     "year": 2023,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-001.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-001.jpg"
   },
   {
     "id": "peint-011",
@@ -129,7 +129,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-002.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-002.jpg"
   },
   {
     "id": "peint-012",
@@ -141,7 +141,7 @@
     "year": 2025,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-003.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-003.jpg"
   },
   {
     "id": "peint-013",
@@ -153,7 +153,7 @@
     "year": 2024,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-004.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-004.jpg"
   },
   {
     "id": "peint-014",
@@ -165,7 +165,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-005.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-005.jpg"
   },
   {
     "id": "peint-015",
@@ -177,7 +177,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-006.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-006.jpg"
   },
   {
     "id": "peint-016",
@@ -189,7 +189,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-007.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-007.jpg"
   },
   {
     "id": "peint-017",
@@ -201,7 +201,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-object/psycho-object-008.jpg"
+    "image": "/src/assets/painting/psycho-object/psycho-object-008.jpg"
   },
   {
     "id": "peint-018",
@@ -213,7 +213,7 @@
     "year": 1999,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-001.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-001.jpg"
   },
   {
     "id": "peint-019",
@@ -225,7 +225,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-002.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-002.jpg"
   },
   {
     "id": "peint-020",
@@ -237,7 +237,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-003.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-003.jpg"
   },
   {
     "id": "peint-021",
@@ -249,7 +249,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-004.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-004.jpg"
   },
   {
     "id": "peint-022",
@@ -261,7 +261,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-005.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-005.jpg"
   },
   {
     "id": "peint-023",
@@ -273,7 +273,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-006.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-006.jpg"
   },
   {
     "id": "peint-024",
@@ -285,7 +285,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-007.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-007.jpg"
   },
   {
     "id": "peint-025",
@@ -297,7 +297,7 @@
     "year": 2020,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/concrete-object/concrete-object-008.jpg"
+    "image": "/src/assets/painting/concrete-object/concrete-object-008.jpg"
   },
   {
     "id": "peint-026",
@@ -309,7 +309,7 @@
     "year": 2024,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-space/psycho-space-001.jpg"
+    "image": "/src/assets/painting/psycho-space/psycho-space-001.jpg"
   },
   {
     "id": "peint-027",
@@ -321,7 +321,7 @@
     "year": 2026,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-space/psycho-space-002.jpg"
+    "image": "/src/assets/painting/psycho-space/psycho-space-002.jpg"
   },
   {
     "id": "peint-028",
@@ -333,7 +333,7 @@
     "year": 2026,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-space/psycho-space-003.jpg"
+    "image": "/src/assets/painting/psycho-space/psycho-space-003.jpg"
   },
   {
     "id": "peint-029",
@@ -345,7 +345,7 @@
     "year": 2024,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-space/psycho-space-004.jpg"
+    "image": "/src/assets/painting/psycho-space/psycho-space-004.jpg"
   },
   {
     "id": "peint-030",
@@ -357,6 +357,6 @@
     "year": 2024,
     "format": "landscape",
     "palette": "colour",
-    "image": "/images/painting/psycho-space/psycho-space-005.jpg"
+    "image": "/src/assets/painting/psycho-space/psycho-space-005.jpg"
   }
 ]

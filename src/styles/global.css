@@ -158,6 +158,23 @@ body {
 
 .card img {
     width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.image-button {
+    width: 100%;
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.image-button img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
