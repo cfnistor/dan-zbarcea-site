@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -9,34 +9,27 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 type Lang = "fr" | "en";
 
 type FilterOption = {
-    label: {
-        fr: string;
-        en: string;
-    };
+    label: { fr: string; en: string };
     value: string;
 };
 
 type FilterConfig = {
     key: string;
-    label: {
-        fr: string;
-        en: string;
-    };
+    label: { fr: string; en: string };
     options: FilterOption[];
 };
 
 type Artwork = {
     id: string;
-    title: {
-        fr: string;
-        en: string;
-    };
+    title: { fr: string; en: string };
     image: string;
-    meta: {
-        fr: string[];
-        en: string[];
-    };
-    filters: Record<string, string>;
+    series: string;
+    technique: { fr: string; en: string };
+    techniqueKey: string;
+    year: string | number;
+    format: string;
+    location: string;
+    palette: string;
 };
 
 const {
@@ -59,6 +52,34 @@ const labels = {
         reset: "Reset",
     },
 };
+
+const artworkImages = await Promise.all(
+    artworks.map(async (artwork) => {
+        const imageLoader = images[artwork.image];
+
+        if (!imageLoader) {
+            return {
+                artwork,
+                image: null,
+                lightboxSrc: "",
+            };
+        }
+
+        const image = (await imageLoader()).default;
+
+        const lightboxImage = await getImage({
+            src: image,
+            width: 1800,
+            format: "webp",
+        });
+
+        return {
+            artwork,
+            image,
+            lightboxSrc: lightboxImage.src,
+        };
+    })
+);
 ---
 
 <section class="artwork-gallery">
@@ -86,7 +107,7 @@ const labels = {
 
     <div class="gallery">
         {
-            artworks.map((artwork) => (
+            artworkImages.map(({ artwork, image, lightboxSrc }) => (
                     <article
                             class="card"
                             data-filters={JSON.stringify({
@@ -101,15 +122,16 @@ const labels = {
                         <button
                                 class="image-button"
                                 type="button"
-                                data-lightbox-image={artwork.image}
+                                data-lightbox-image={lightboxSrc}
                                 data-lightbox-title={artwork.title[lang]}
                                 data-lightbox-meta={`${artwork.technique[lang]} · ${artwork.series} · ${artwork.year}`}
                         >
                             {
-                                images[artwork.image] && (
+                                image && (
                                             <Image
-                                                    src={images[artwork.image]()}
+                                                    src={image}
                                                     alt={artwork.title[lang]}
+                                                    width={700}
                                                     widths={[320, 480, 700, 1000, 1400]}
                                                     sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw"
                                                     format="webp"
@@ -172,7 +194,7 @@ const labels = {
     let currentLightboxIndex = 0;
 
     function applyFilters() {
-        const activeFilters = /** @type {Record<string, string>} */ ({});
+        const activeFilters = {};
 
         filters.forEach((filter) => {
             if (!(filter instanceof HTMLSelectElement)) return;
@@ -229,19 +251,30 @@ const labels = {
         if (!(lightbox instanceof HTMLElement)) return;
         if (!(lightboxImage instanceof HTMLImageElement)) return;
 
-        lightboxImage.src = button.dataset.lightboxImage || "";
-        lightboxImage.alt = button.dataset.lightboxTitle || "";
+        const imageSrc = button.dataset.lightboxImage || "";
+        const imageAlt = button.dataset.lightboxTitle || "";
 
-        if (lightboxTitle instanceof HTMLElement) {
-            lightboxTitle.textContent = button.dataset.lightboxTitle || "";
-        }
+        lightboxImage.src = "";
+        lightboxImage.alt = imageAlt;
 
-        if (lightboxMeta instanceof HTMLElement) {
-            lightboxMeta.textContent = button.dataset.lightboxMeta || "";
-        }
+        const preloadImage = new window.Image();
 
-        lightbox.hidden = false;
-        document.body.classList.add("lightbox-open");
+        preloadImage.onload = () => {
+            lightboxImage.src = imageSrc;
+
+            if (lightboxTitle instanceof HTMLElement) {
+                lightboxTitle.textContent = imageAlt;
+            }
+
+            if (lightboxMeta instanceof HTMLElement) {
+                lightboxMeta.textContent = button.dataset.lightboxMeta || "";
+            }
+
+            lightbox.hidden = false;
+            document.body.classList.add("lightbox-open");
+        };
+
+        preloadImage.src = imageSrc;
     }
 
     function showLightboxImage(direction) {
