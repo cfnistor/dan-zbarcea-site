@@ -398,15 +398,13 @@
     "palette": "monochrome",
     "image": "/src/assets/photography/post-photography/post-photography-008.jpg"
   },
-
-
   {
     "id": "ph-022",
     "title": {
       "fr": "villes-001",
       "en": "cities-001"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "cities",
     "technique": {
       "fr": "photo numérique",
@@ -425,7 +423,7 @@
       "fr": "villes-002",
       "en": "cities-002"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "cities",
     "technique": {
       "fr": "photo numérique",
@@ -444,7 +442,7 @@
       "fr": "villes-003",
       "en": "cities-003"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "cities",
     "technique": {
       "fr": "photo numérique",
@@ -463,7 +461,7 @@
       "fr": "villes-004",
       "en": "cities-004"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "cities",
     "technique": {
       "fr": "photo numérique",
@@ -482,7 +480,7 @@
       "fr": "villes-005",
       "en": "cities-005"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "cities",
     "technique": {
       "fr": "photo numérique",
@@ -498,11 +496,11 @@
   {
     "id": "ph-027",
     "title": {
-      "fr": "territoires-001",
-      "en": "territories-001"
+      "fr": "teritoires-001",
+      "en": "teritories-001"
     },
-    "category": "photography",
-    "series": "territories",
+   "category": "photography",
+    "series": "post-photography",
     "technique": {
       "fr": "photo numérique",
       "en": "digital photo"
@@ -517,11 +515,11 @@
   {
     "id": "ph-028",
     "title": {
-      "fr": "territoires-002",
-      "en": "territories-002"
+      "fr": "teritoires-002",
+      "en": "teritories-002"
     },
-    "category": "photography",
-    "series": "territories",
+   "category": "photography",
+    "series": "post-photography",
     "technique": {
       "fr": "photo numérique",
       "en": "digital photo"
@@ -536,11 +534,11 @@
   {
     "id": "ph-029",
     "title": {
-      "fr": "territoires-003",
-      "en": "territories-003"
+      "fr": "teritoires-003",
+      "en": "teritories-003"
     },
-    "category": "photography",
-    "series": "territories",
+   "category": "photography",
+    "series": "post-photography",
     "technique": {
       "fr": "photo numérique",
       "en": "digital photo"
@@ -555,11 +553,11 @@
   {
     "id": "ph-030",
     "title": {
-      "fr": "territoires-004",
-      "en": "territories-004"
+      "fr": "teritoires-004",
+      "en": "teritories-004"
     },
-    "category": "photography",
-    "series": "territories",
+   "category": "photography",
+    "series": "post-photography",
     "technique": {
       "fr": "photo numérique",
       "en": "digital photo"
@@ -574,11 +572,11 @@
   {
     "id": "ph-031",
     "title": {
-      "fr": "territoires-005",
-      "en": "territories-005"
+      "fr": "teritoires-005",
+      "en": "teritories-005"
     },
-    "category": "photography",
-    "series": "territories",
+   "category": "photography",
+    "series": "post-photography",
     "technique": {
       "fr": "photo numérique",
       "en": "digital photo"
@@ -596,7 +594,7 @@
       "fr": "city sky-001",
       "en": "city sky-001"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "city-sky",
     "technique": {
       "fr": "photo numérique",
@@ -615,7 +613,7 @@
       "fr": "city sky-002",
       "en": "city sky-002"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "city-sky",
     "technique": {
       "fr": "photo numérique",
@@ -634,7 +632,7 @@
       "fr": "city sky-003",
       "en": "city sky-003"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "city-sky",
     "technique": {
       "fr": "photo numérique",
@@ -653,7 +651,7 @@
       "fr": "city sky-004",
       "en": "city sky-004"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "city-sky",
     "technique": {
       "fr": "photo numérique",
@@ -672,7 +670,7 @@
       "fr": "city sky-005",
       "en": "city sky-005"
     },
-    "category": "photography",
+   "category": "photography",
     "series": "city-sky",
     "technique": {
       "fr": "photo numérique",
@@ -684,5 +682,5 @@
     "location": "not-specified",
     "palette": "colour",
     "image": "/src/assets/photography/city-sky/city-sky-005.jpg"
-  }
+  } 
 ]
